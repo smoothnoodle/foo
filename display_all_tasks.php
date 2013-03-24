@@ -29,7 +29,7 @@
 <h1>All Available tasks</h1>
 
 <?php
-$userid = 42;
+//$userid = 42;
 //$link = connect($username, $password, $host, $db_name);
 //display_all_tasks($link, $userid);
 //mysql_close($link);
