@@ -33,8 +33,9 @@
 //$link = connect($username, $password, $host, $db_name);
 //display_all_tasks($link, $userid);
 //mysql_close($link);
-$sql = "SELECT * FROM task where status = 'open';";
-query($sql,$username, $password, $host, $db_name);
+$sql = "SELECT * FROM name;";
+$result = query($sql,$username, $password, $host, $db_name);
+display_name($result);
 
 ?>
 </body>

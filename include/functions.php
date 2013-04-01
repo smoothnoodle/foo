@@ -19,8 +19,7 @@ function connect($username, $password, $host, $db_name){#reuse this code that's 
 //========================================================================================================
 function display_all_tasks($link, $userid){//good coding here
 //what is input and return value???
-
-	//echo "search";
+//echo "search";
 	
 		//$sql = "SELECT * FROM task where status = 'open' and tasker_id != $userid;";
 		
@@ -37,13 +36,22 @@ function display_all_tasks($link, $userid){//good coding here
 };
 
 //=============================================================================================================
-
-Function query($sql,$username, $password, $host, $db_name) {
+function query($sql,$username, $password, $host, $db_name) {
 	$link = connect($username, $password, $host, $db_name);
 	$result = mysql_query($sql, $link);
 	mysql_close($link);
-	echo "run";
+	echo "run query";
     return $result;
 }
+//=============================================================================================================
+function display_name($result){//good coding here
+	echo "run display";
+	echo "<table border=1>";
+	echo "<hd><tr><td>FirstName</td><td>LastName</td></hd>";
+	while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
+		echo "<tr><td>$row[1]</td><td>$row[2]</td></tr>";
+	};
+	echo "</table>";
+};
 
 ?>
