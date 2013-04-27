@@ -29,14 +29,9 @@
 <h1>All Available tasks</h1>
 
 <?php
-//$userid = 42;
-//$link = connect($username, $password, $host, $db_name);
-//display_all_tasks($link, $userid);
-//mysql_close($link);
 $sql = "SELECT * FROM name;";
 $result = query($sql,$username, $password, $host, $db_name);
 display_name($result);
-
 ?>
 </body>
 </html>
