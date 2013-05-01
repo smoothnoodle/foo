@@ -56,4 +56,9 @@ echo "<b>current()</b><br>";
 $people = array("Joe", "Glenn", "Cleveland", "Peter");
 echo current($people) . "<br />";
 
+echo "<br>";
+echo "<b>search()</b><br>";
+$a=array("3","2","7","4");
+echo max($a);
+
 ?>

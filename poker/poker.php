@@ -34,17 +34,28 @@ for($x=0;$x<5;$x++)
 {
 	$player1[] = array_shift($card2);
 	$player2[] = array_shift($card2);
+	//$face2[] = substr($card2[$x], 0, -2);
 }
+
+sort($player1);
+sort($player2);
+//sort($face1);
+//sort($face2);
 
 echo "<br><br>";
 echo "<b>Player1</b><br>";
+echo "hightest card: ".max($player1)."<br>";
 print_r ($player1); 
 
 echo "<br><br>";
 echo "<b>Player2</b><br>";
+echo "hightest card: ".max($player2)."<br>";
 print_r ($player2); 
 
 echo "<br><br>";
 print_r ($card2); 
+
+echo "<br><br>face1_array<br>";
+print_r ($face1); 
 
 ?>
