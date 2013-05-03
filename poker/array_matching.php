@@ -17,6 +17,8 @@
 // look for pairs
 //if all else compare biggest number of the array win
 
+//single and snake are very similar and becareful, so the order of compare is very important
+
 // double array approach?? good to know
 // assocated approach: 1.4 => "1 Spade", would not work because replace the index 0 to whatever name u want.. because of that u can't use for loop
 

@@ -1,4 +1,7 @@
 <?php 
+
+include "function.php";
+
 //create three arrays: 1 array for the deck, 2 array for each player
 //populate 56 cards into card array 
 //shulff the card array 
@@ -37,8 +40,8 @@ for($x=0;$x<5;$x++)
 	//$face2[] = substr($card2[$x], 0, -2);
 }
 
-sort($player1);
-sort($player2);
+//sort($player1);
+//sort($player2);
 //sort($face1);
 //sort($face2);
 
@@ -46,11 +49,13 @@ echo "<br><br>";
 echo "<b>Player1</b><br>";
 echo "hightest card: ".max($player1)."<br>";
 print_r ($player1); 
+echo "<br><br>hand: ".hand($player1)."<br>";
 
 echo "<br><br>";
 echo "<b>Player2</b><br>";
 echo "hightest card: ".max($player2)."<br>";
 print_r ($player2); 
+echo "<br><br>hand: ".hand($player2)."<br>";
 
 echo "<br><br>";
 print_r ($card2); 

@@ -1,5 +1,24 @@
 <?php
 $face = array("3","4","5","6","7");
+$suit = array("4","4","4","4","4");
+
+function is_straightflush($face,$suit){
+	if (is_snake($face)==1 and is_flush($suit)==1){
+		return 1;
+	}
+	else{
+		return 0;
+	}
+};
+
+function is_flush($suit){
+//return 0=false, 1=true
+	if(count(array_unique($suit)) == 1){
+		return 1;
+	}else{
+		return 0;
+	}
+}
 
 function is_snake($face){
 //return 0=false, 1=true 
@@ -27,6 +46,5 @@ function is_snake($face){
 	  return $result;
 };
 
-echo is_snake($face);
-
+echo is_straightflush($face,$suit);
 ?>
