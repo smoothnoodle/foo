@@ -1,7 +1,7 @@
 <?php
 
 //compare algorithm, key is to look for patterns
-//Straigh flush > four of the kinds > Full house > flush > straight > three of the kind > Two pair > One Pair > high card
+//Straigh flush > four of the kinds > Full house > flush > straight > three of the kind > Two pair > One Pair > singles
 //every patterns return true or false, is it a snake!?? true
 
 //problem1, create players.. now only two players allow, what happen if I want to add up to 6 players? multi-dimensional array, is one of the answer

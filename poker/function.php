@@ -13,6 +13,76 @@
 //$player = array("7.4","8.3","11.2","9.3","5.4");//one pairs
 
 
+function flop($card, $community){
+	for ($x=0;$x<3;$x++){
+		$community[$x] = array_shift($card);
+	};
+	return array($community, $card);
+}
+
+function turn($card, $community){
+	
+		$community[] = array_shift($card);
+
+	return array($community, $card);
+}
+
+function river($card, $community){
+	
+		$community[] = array_shift($card);
+
+	return array($community, $card);
+}
+
+function down_card($card,$num_of_player){
+//give two down cards to each players
+//return $players' card, Card after shuffles
+
+	for($y=0;$y<2;$y++){
+	for($x=0;$x<$num_of_player;$x++){
+			$players[$x][$y]=array_shift($card);
+			//echo $players[$x][$y]."<br>";//add card into the 
+		};
+	}
+	return array($players, $card);
+}
+
+function burn_card($card){
+	array_shift($card);
+	return $card;
+};
+
+function display_hand($hand){
+	if ($hand==9){
+		$name = "Straight flush";
+		return $name;
+	}else if ($hand==8){
+		$name = "Four of the kinds";
+		return $name;
+	}else if ($hand==7){
+		$name = "Full house";
+		return $name;
+	}else if ($hand==6){
+		$name =  "Flush";
+		return $name;
+	}else if ($hand==5){
+		$name =  "Straight";
+		return $name;
+	}else if ($hand==4){
+		$name =  "Three of the kinds";
+		return $name;
+	}else if ($hand==3){
+		$name =  "Two pairs";
+		return $name;
+	}else if ($hand==2){
+		$name =  "One pair";
+		return $name;
+	}else if ($hand==1){
+		$name =  "higher card";
+		return $name;
+	}
+}
+
 function hand($player){
 //sort card
 //split the card to face and suit
@@ -23,31 +93,31 @@ sort($face);
 sort($suit);
 
 	if (is_straightflush($face,$suit)==1){
-		echo "Straight flush";
+		//echo "Straight flush";
 		return 9;
 	}else if (is_fourkind($face)==1){
-		echo "four of the kinds";
+		//echo "four of the kinds";
 		return 8;
 	}else if (is_fullhouse($face)==1){
-		echo "full house";
+		//echo "full house";
 		return 7;
 	}else if (is_flush($suit)==1){
-		echo "flush";
+		//echo "flush";
 		return 6;
 	}else if (is_straight($face)==1){
-		echo "straight";
+		//echo "straight";
 		return 5;
 	}else if (is_threekind($face)==1){
-		echo "three of the kinds";
+		//echo "three of the kinds";
 		return 4;
 	}else if (is_twopair($face)==1){
-		echo "two pairs";
+		//echo "two pairs";
 		return 3;
 	}else if (is_onepair($face)==1){
-		echo "one pair";
+		//echo "one pair";
 		return 2;
 	}else if (is_single($face)==1){
-		echo "single";
+		//echo "single";
 		return 1;
 	}
 }
