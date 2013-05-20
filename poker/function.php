@@ -12,6 +12,21 @@
 //$player = array("7.4","7.3","11.2","9.3","5.4");//one pairs
 //$player = array("7.4","8.3","11.2","9.3","5.4");//one pairs
 
+function player_community($players, $community){
+	$arrlength=count($players);
+	for($x=0;$x<$arrlength;$x++){
+		$player_community[]=merge($players[$x],$community);
+		//print_r ($player_community[$x]);
+		//echo "<br><br>";
+	};
+return $player_community;
+
+};
+
+function merge($array1, $array2){
+	$result = array_merge($array1, $array2);
+	return $result;
+};
 
 function flop($card, $community){
 	for ($x=0;$x<3;$x++){
