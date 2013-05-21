@@ -17,9 +17,6 @@ function is_flush($suit){
 	}
 }
 
-
-
-
 /*function is_flush($suit){
 //return 0=false, 1=true
 	if(count(array_unique($suit)) == 1){

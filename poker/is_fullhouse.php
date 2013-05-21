@@ -1,30 +1,27 @@
 <?php
-$face = array("5","5","5","2","2","1","1");
+$face = array("5","5","5","2","2","2","3");
 function is_fullhouse($face){
 //0 is false, 1 is true
+//211
+
 
 	$temp = array_count_values($face);
 	arsort($temp);
-    print_r($temp);
-	$count = count($temp);
-	$max = max($temp);
-	//echo "count: ".count($temp)."<br>";
-	//echo "max: ".max($temp);
-
+	print_r($temp);
+	$max = max($temp);	
+	$keys = array_keys($temp);//how does this thing work? do I really need it?
+	echo $keys[0];//[5] => 3, u can't just said index 0, if u want to get 3 out u need to call 5.. $keys return it in order
+	$secondhighest = $temp[$keys[1]];
+	//$secondhighest = $temp[1]; Notice: Undefined offset: 1 in C:\xampp\htdocs\foo\poker\is_fullhouse.php on line 14
 	
-
-	$keys = array_keys($temp);
-	//print_r($keys);
-	//echo "<br>".$keys[1]; // return index which is 2 
-	//echo "<br>".$temp[$keys[1]]; // return the value of second index of the array
-	
-	if($temp[$keys[1]==3 and $max==3){
+	if($secondhighest!=1 and $max==3){//fourofkinds must before it and hit return!
 		return $result=1;
 	}else{
 		return $result=0;
 	}
 }
 
+//echo is_fullhouse($face);
 echo is_fullhouse($face);
 
 ?>
