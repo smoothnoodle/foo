@@ -1,5 +1,5 @@
 <?php
-$face = array("5","5","5","2","2","2","2");
+$face = array("5","5","5","2","2","1","1");
 function is_fullhouse($face){
 //0 is false, 1 is true
 
@@ -14,14 +14,14 @@ function is_fullhouse($face){
 	
 
 	$keys = array_keys($temp);
-	print_r($keys);
-	echo "<br>".$keys[1]; // return index which is 2 
-	echo "<br>".$temp[$keys[1]]; // return the value of second index of the array
+	//print_r($keys);
+	//echo "<br>".$keys[1]; // return index which is 2 
+	//echo "<br>".$temp[$keys[1]]; // return the value of second index of the array
 	
-	if($count==2 and $max==3){
-		//return $result=1;
+	if($temp[$keys[1]==3 and $max==3){
+		return $result=1;
 	}else{
-		//return $result=0;
+		return $result=0;
 	}
 }
 
