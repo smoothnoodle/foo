@@ -1,6 +1,6 @@
 <?php
-$face = array("1","4","8","2","6","5","3");
-//$face = array("5","7","8","2","3","4","1");
+//$face = array("1","4","8","2","6","5","3");
+$face = array("5","7","8","2","3","4","1");
 
 $length=count($face);
 
@@ -23,23 +23,15 @@ echo "second highest number: ".$secondhightest = max($face);
 //return the highest value back to the array
 $face[$tempindex]=$tempvalue;
 
-//print_r($face);
 function findmax($face){
 $lenght=count($face);
-for($x=0;$x<$lenght;$x++){
-	//echo $face[$x];
-	$y=$x+1;
-	for($y;$y<$lenght;$y++){
-	If($face[$x]>$face[$y]){
-		//echo "work";
-		$temp=$face[$x];
-		$face[$x]=$face[$y];
-		$face[$y]=$temp;
+$highest=0;
+	for($x=0;$x<$lenght;$x++){
+		if($highest<$face[$x]){
+			$highest=$face[$x];
+		};
 	};
-	};
-};
-//print_r($face);
-return $face[$lenght-1];
+return $highest;
 };
 
 
