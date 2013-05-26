@@ -6,25 +6,20 @@ $face = array("2","3","5","6","7","8","9");
 function is_snake($face){
 //return 0=false, 1=true 
 "length: ".$arrlength=count($face);
-
-	sort($face);
+sort($face);
 	//print_r($face);
-	for($y=0;$y<3;$y++){
+	for($y=0;$y<2;$y++){
 	$min=$face[$y];
-		for($x=0;$x<$arrlength;$x++){
+	$count=0;
+		for($x=0;$x<$x+3;$x++){
 		  echo "min: ".$min."<br>";
-		  //echo $face[$x];
-		  if($face[$x]==$min){
-			//echo "true";
-		  }else{
-			//echo "false";//return false; that's the key to find out snake or not...
-			//$result = 0;
-		  }
+		  echo $face[$y];
+		  if($face[$y]==$min){
+		  };
 		  $min = $min+1;
-		  //echo "<br>";
+		  echo "<br>";
 		  } 
 	};
-
 	  //return $result;
 };
 
