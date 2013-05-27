@@ -1,5 +1,30 @@
 learn /read documentation of libraries and framework
 
+28May2013
+======================================
+snake/straight is done..
+
+workin on royal flush.. suit part is difficult.. need the beginning index and end index of the snake
+
+took 2hr 05, snake function took me 2hrs to completed
+
+Royal flush 1hr20min today.. 
+
+Why took me so long... I didn't draw it up on paper.. the flush use count as the way to do was wrong.. I only release at the end.. u should realised at the beginning.. that what planning is all about.. avoid this kind of situation...
+
+
+27May2013
+======================================
+Rome isn't build in a day.. there is a long way to go. be patient and keep doing it!!!
+
+highest max();, I wrote the whole sort algorithm but there is another anwser way simplier, just hightest=$face[$x].. that's it!!!!
+
+Kalki challenge is fun..
+
+Get yr focus back to the poker game.. is_sanke -> who_won(); is a prototype.. 
+
+focus on one thing@the time.... too forward looking is not gooood!
+
 
 22May2013
 ======================================
