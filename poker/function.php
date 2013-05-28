@@ -105,7 +105,7 @@ $face = face_split($player);
 $suit = suit_split($player);
 
 sort($face);
-sort($suit);
+//sort($suit);//remove the sort(suit) otherwise royal flush wont work
 
 	if (is_straightflush($face,$suit)==1){
 		//echo "Straight flush";
@@ -138,14 +138,14 @@ sort($suit);
 }
 
 function face_split($player){
-	for($x=0;$x<5;$x++){
+	for($x=0;$x<7;$x++){//7 is correct.. how do u find out... how many element in an array - 1, is last of $y, make sure $x is not bigger than $y, 1<1 is false 
 		$face[] = substr($player[$x], 0, -2);	
 	}
 	return $face;
 }
 
 function suit_split($player){
-	for($x=0;$x<5;$x++){
+	for($x=0;$x<7;$x++){
 		If(strlen($player[$x])==4){
 			$suit[] = substr($player[$x], 3);
 		}else{

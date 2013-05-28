@@ -1,5 +1,18 @@
 learn /read documentation of libraries and framework
 
+29May2013
+======================================
+need to coding early.. 2hr per day is not much
+
+run into a few bugs@snake/royal flush function..
+
+epic struggle with royal flush function :/ Also discovered a bug in the snake function >,< plus side, I learnt a lot.
+
+May be, I should start plan better but then I don't think I will see royal flush issue coming...
+
+
+
+
 28May2013
 ======================================
 snake/straight is done..
