@@ -1,5 +1,76 @@
 learn /read documentation of libraries and framework
 
+
+30May2013
+======================================
+Break through in royal flush.. I can find the highest/lower number... the answer is simple
+
+fixed snake function... 
+
+Learnt don't be afraid to look back into your code to discover error and look into thing that a wierd, u not understand.... that's how u learn and get better..
+
+rome isn't build in one day... it takes time...
+
+29May2013
+======================================
+10min each no more
+
+Take a look@Andriod platform 
+and C#
+Industry experience in C# .Net Windows Forms development
+control???
+
+Industry experience with SQL Server development
+https://www.youtube.com/watch?v=mNj7ofVqbwE
+
+basic SQL commands
+http://www.cs.utexas.edu/~mitra/csFall2012/cs329/lectures/sql.html
+
+
+AJAX 
+
+CODEIGNITER
+A Fully Baked PHP Framework. CodeIgniter is a proven, agile & open PHP web application framework with a small footprint.
+
+Ability to layout and present designs for tables, forms & other miscellaneous interface items
+
+Understanding or experience with SOAP/JSON and other communication methods
+some kind of database communication framework
+
+SVN commands and management
+
+full stack framework such as Symfony, as most applications are built in Symfony. 
+Symfony is a web application framework written in PHP that follows the model¡Vview¡Vcontroller (MVC) paradigm. Released under the MIT license, Symfony is free software. The symfony-project.com website launched on October 18, 2005.[1]
+
+MVC, security and database architecture, and have demonstrated experience creating End-To-End full life cycle products.
+https://www.youtube.com/watch?v=k47wEfxpxA4
+
+HTML, CSS, JQuery
+
+Twitter Bootstrap
+https://www.youtube.com/watch?v=DgwtRpf60xI
+
+Linux/Unix Shell scripting
+
+HTTP Spec (including status codes and caching behaviors)
+
+RESTfull APIs
+https://www.youtube.com/watch?v=YCcAE2SCQ6k
+
+responsive designs, and HTML5
+
+CSS frameworks (OOCSS), 
+https://www.youtube.com/watch?v=2bLvZ19o-6o
+
+Intimate knowledge of cross-browser issues
+
+learn more about GIthub
+
+
+
+
+
+
 29May2013
 ======================================
 need to coding early.. 2hr per day is not much
