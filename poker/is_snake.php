@@ -29,7 +29,9 @@ Print_r($face);
 				//echo "<br>".$face[$x];//all combine of snake should show up
 				
 					if($count==5){//that's not good... 
-						echo "<br>".$face[$x];//magic answer.. I can find out the magic number...now I can go backaward -5 to find out the low index						
+						echo "<br>".$face[$x];//magic answer.. I can find out the magic number...now I can go backaward -5 to find out the low index
+						$low=$face[$x]-5;
+						echo "<br>".$low;						
 						//return array($result, $length);
 					};
 				};
@@ -42,7 +44,6 @@ Print_r($face);
 	return array($result, $length);
 
 };
-
 
 $result=is_snake($face);
 $is_snake=$result[0];

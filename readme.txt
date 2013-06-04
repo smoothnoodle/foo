@@ -1,5 +1,25 @@
 learn /read documentation of libraries and framework
 
+5Jun2013
+======================================
+Hard day!! Just catch up and review my work
+
+@2am, I don't want to read for other ppl's code
+
+check out sharepoint tomorr
+
+too slow!! U need to finish Poker prototype0.2, able to return who win!!!
+
+2Jun2013
+======================================
+I.T career projects:
+wuuker/eyepoppy/passioncan.. 
+mobile poker game, pong game/chess/pacman
+
+not just develop a game but a system/time management/team/networking/marketing/skills
+
+take a look@Sharepoint
+
 
 30May2013
 ======================================
