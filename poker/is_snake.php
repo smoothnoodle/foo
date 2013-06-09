@@ -11,26 +11,26 @@ $face = array("2","3","4","5","6","7","8");
 function is_snake($face){
 //return 0=false, 1=true 
 
-$face=array_unique($face);//add this line
-sort($face);
-"length: ".$arrlength=count($face);
-Print_r($face);
+$uface=array_unique($face);//**IMPORTANT, without this line, snake will have bug!!!!
+sort($uface);
+"length: ".$arrlength=count($uface);
+Print_r($uface);
 
 	for($y=0;$y<3;$y++){
-	$min=$face[$y];
+	$min=$uface[$y];
 	//$z=$y+5;
 	$z=$arrlength-$y;//that's correct 7,6,5
 	//echo "z: ".$z."<br>";
 	$count =0;
 
 		for($x=$y;$x<$arrlength;$x++){
-			if($face[$x]==$min){
+			if($uface[$x]==$min){
 				 $count = $count+1;//
 				//echo "<br>".$face[$x];//all combine of snake should show up
 				
 					if($count==5){//that's not good... 
-						echo "<br>".$face[$x];//magic answer.. I can find out the magic number...now I can go backaward -5 to find out the low index
-						$low=$face[$x]-5;
+						//echo "<br>".$face[$x];//magic answer.. I can find out the magic number...now I can go backaward -5 to find out the low index
+						$low=$uface[$x]-5;
 						echo "<br>".$low;						
 						//return array($result, $length);
 					};
