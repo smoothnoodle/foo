@@ -17,7 +17,7 @@ for($x=0;$x<$length;$x++){
 };
 
 //find the second hightest value here
-echo "second highest number: ".$secondhightest = max($face);
+echo "second highest number: ".$secondhightest = findmax($face);
 //echo $secondhightest = max($face);
 
 //return the highest value back to the array
