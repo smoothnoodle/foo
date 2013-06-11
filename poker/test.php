@@ -1,7 +1,8 @@
 <?php
 //$array = array(0 => 'blue', 1 => 'red', 2 => 'green', 3 => 'red');
 //$face = array("4","5","6","7","8","8","8");
-$face = array("2","3","4","5","6","6","6");
+//$face = array("2","3","4","5","6","6","6");
+$face = array("2","3","4","5","6","6","7");
 $length =count($face);
 
 $key = array_search('6', $face); // $key = 2;
