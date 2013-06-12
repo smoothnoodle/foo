@@ -1,14 +1,18 @@
 <?php
-//include "function.php";
 
-//$face = array("2","5","4","5","9","7","8");//correct
-$face = array("2","3","4","5","6","7","8");//correct, ** must check
-//$face = array("1","3","4","5","6","7","9");//correct
-//$face = array("9","10","10","11","12","13","14");//correct
-//$face = array("1","3","4","5","5","6","7");//correct
-//$face = array("10","11","12","13","14","14","14");//correct
-//$face = array("10","3","4","5","6","7","1");//correct
-//$face = array("9","9","9","10","11","12","13");//correct
+function is_straightflush($face,$suit){
+
+$result=is_straight($face);
+echo $is_snake=$result[0];
+$highs=$result[1];
+
+if (is_straight($face)==1 and is_flush($suit)==1){
+		return 1;
+	}
+	else{
+		return 0;
+	}
+};
 
 
 function is_straight($face){
@@ -61,8 +65,33 @@ $result=is_straight($face);
 echo $is_snake=$result[0];
 $highs=$result[1];
 
+$highkey=6;
 
-//print_r($highs);
+function check_high($face,$highkey){
+//input: $face array must be sorted, otherwise wouldn't work
+//return 0=false, no higher index
+$key = array_search($highkey, $face); // $key = 2;
+//echo "key: ".$key."<br>";
 
+If($key==null){
+	return $highkey=0;
+};
+
+$length =count($face);
+
+$highkey=0;
+$x=$key+1;
+$len=$length-1;
+//echo "len: ".$len."<br>";
+	while($x<=$len and $face[$x]==$face[$key]){//order condition does make a difference
+		//echo $x."<br>";
+		//echo "high: ".$highkey=$x."<br>";
+		$highkey=$x;
+		$x++;
+	};
+return $highkey;
+};
+
+echo check_high($face,$highkey);
 
 ?>

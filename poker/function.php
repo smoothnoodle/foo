@@ -12,6 +12,31 @@
 //$player = array("7.4","7.3","11.2","9.3","5.4");//one pairs
 //$player = array("7.4","8.3","11.2","9.3","5.4");//one pairs
 
+function check_high($face,$highkey){
+//input: $face array must be sorted, otherwise wouldn't work
+//return 0=false, no higher index
+$key = array_search($highkey, $face); // $key = 2;
+//echo "key: ".$key."<br>";
+
+If($key==null){
+	return $highkey=0;
+};
+
+$length =count($face);
+
+$highkey=0;
+$x=$key+1;
+$len=$length-1;
+//echo "len: ".$len."<br>";
+	while($x<=$len and $face[$x]==$face[$key]){//order condition does make a difference
+		//echo $x."<br>";
+		//echo "high: ".$highkey=$x."<br>";
+		$highkey=$x;
+		$x++;
+	};
+return $highkey;
+};
+
 function player_community($players, $community){
 	$arrlength=count($players);
 	for($x=0;$x<$arrlength;$x++){
@@ -98,14 +123,13 @@ function display_hand($hand){
 	}
 }
 
-function hand($player){
+function hand($play_card){//
 //sort card
 //split the card to face and suit
-$face = face_split($player);
-$suit = suit_split($player);
+sort($play_card);
+$face = face_split($play_card);
+$suit = suit_split($play_card);
 
-sort($face);
-//sort($suit);//remove the sort(suit) otherwise royal flush wont work
 
 	if (is_straightflush($face,$suit)==1){
 		//echo "Straight flush";
@@ -138,7 +162,11 @@ sort($face);
 }
 
 function face_split($player){
-	for($x=0;$x<7;$x++){//7 is correct.. how do u find out... how many element in an array - 1, is last of $y, make sure $x is not bigger than $y, 1<1 is false 
+//input $player_community[$x], otherwise wouldn't work
+$length=count($player);
+	//print_r($player);
+	for($x=0;$x<$length;$x++){//7 is correct.. how do u find out... how many element in an array - 1, is last of $y, make sure $x is not bigger than $y, 1<1 is false 
+		//echo $player[$x];
 		$face[] = substr($player[$x], 0, -2);	
 	}
 	return $face;

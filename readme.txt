@@ -1,5 +1,22 @@
 learn /read documentation of libraries and framework
 
+12Jun2013
+======================================
+another programming issue
+
+not my nite.. stuck on the same area-royal flush.. I believe I can't finish.. all the answers are there
+
+this required me to put three to five different function to work together.. My mind just not working... how can I draw that? I guess that what the UML diagram.. about?
+
+next level stuff, how to design a set of functions to work together and in a way, I can understand and share with ppl???
+
+today, @coding wasn't good :/ where I require to join 5 or 6 functions together to get the royal flush part work but my mind doesn't work. I have to think how to pass the variable from one function to another. Go backward to the main code. All I did was backtracking the code. I got lost and find the way but very slow. This is like architecture!! 
+
+Last few days, I have been focus on loops and logic of one single function like the challenge.. this is such a big change.
+
+How do u guy work out coding from architectural level? Is there anyway, I can draw this on paper/standard method? So I can share my design(function views) with others before we start coding?? this will be useful
+
+
 5Jun2013
 ======================================
 Hard day!! Just catch up and review my work
