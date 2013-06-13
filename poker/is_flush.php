@@ -5,6 +5,7 @@ function is_flush($suit){
 //0 is false, 1 is true
 
 	$temp = array_count_values($suit);
+	//Array ( [4] => 5 [3] => 1 [2] => 1 ) 
 	//print_r($temp);
 	echo $max = max($temp);
 	//echo "count: ".count($temp)."<br>";
@@ -26,6 +27,6 @@ function is_flush($suit){
 	}
 }*/
 
-echo is_flush($suit);
+is_flush($suit);
 
 ?>

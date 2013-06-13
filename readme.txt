@@ -1,5 +1,14 @@
 learn /read documentation of libraries and framework
 
+13Jun2013
+======================================
+issue with intergating highindex function into rflush but I am moving forward.. slow but forward
+
+this function will need a lot of testing and review..so take times
+
+meanwhile.. IT job searching and challenges.. API-interface... Android..
+
+
 12Jun2013
 ======================================
 another programming issue
