@@ -1,15 +1,17 @@
 <?php
 
-$face = array("2","3","4","5","6","7","8");//correct, ** must check
-//$face = array("2","3","4","5","6","6","6");//correct, ** must check
-$suit = array("4","4","4","4","4","2","1");//correct, ** must check
+//$face = array("2","3","4","5","6","7","8");//correct, ** must check
+$face = array("2","3","4","5","6","6","6");//correct, ** must check
+$suit = array("4","4","4","4","3","4","1");//correct, ** must check
 $highs = array("6","7","8");
 
 function is_rflush($face,$suit,$highs){
 //return 0=false, 1=true
+//this doesn't check is snake or not.. just the suit
 //$suit array must be sorted
 //$face array must be sorted
 //$highs array from straight function, number and high value of the straight
+
 $royal=array();
 $count = count($highs);
 
@@ -18,25 +20,33 @@ for($x=0;$x<$count;$x++){//count is three, should be ok
 	$high_value=$highs[$x];//good
 	$low_value=$high_value-4;//good
 	
-	echo $low_index = array_search($low_value, $face);//correct
-	echo $high_index = get_index($face,$high_value);//correct
+	$low_index = array_search($low_value, $face);//correct
+	$high_index = get_index($face,$high_value);//correct
 	
-
+	if($low_index==0){//array slice zero bug fixed
+		$high_index = $high_index+1;
+	}
 	$temp_suit = array_slice($suit, $low_index, $high_index);//test	problem with 0; 
-	print_r($temp_suit);//bug here 04Array ( [0] => 4 [1] => 4 [2] => 4 [3] => 4 ) 
+	//print_r($temp_suit);//bug here 04Array ( [0] => 4 [1] => 4 [2] => 4 [3] => 4 ) 
 	
 	
 	$result = array_count_values($temp_suit);//check
 	echo "<br>";
-	//print_r($result);
-	$max = max($result);//issues 443
-	if($max==5){//check 
-		$royal_face=$high_value;
-		$royal_suit="suit";
+	if($result==null){
+		$max=null;
+	}else{
+		//print_r($result);
+		$max = max($result);//issues 443
+	};	
+	
+	if($max==5){//I think is perfect.. only work with one signle deck game
+		echo $royal_face=$high_value;
+		echo $royal_suit="suit";
 		//merge face and suit then put it in royal array;
-		echo "straight_flush";
+		//echo "straight_flush";
 	};
 	};
+	print_r($royal);
 };//end of is_rflush
 
 is_rflush($face,$suit,$highs);

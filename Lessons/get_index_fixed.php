@@ -1,4 +1,5 @@
 <?php
+//fix return 0 when the highest index is the same index as before
 
 $face = array("2","3","4","5","6","6","6");//correct, ** must check
 //$face = array("2","3","4","5","6","7","8");//correct, ** must check
