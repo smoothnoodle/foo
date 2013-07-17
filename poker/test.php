@@ -47,6 +47,7 @@ for($x=0;$x<$count;$x++){//count is three, should be ok
 	};
 	};
 	print_r($royal);
+	//return all the highest suit card!! 
 };//end of is_rflush
 
 is_rflush($face,$suit,$highs);
