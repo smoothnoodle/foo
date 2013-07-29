@@ -1,4 +1,76 @@
 learn /read documentation of libraries and framework
+need to set yourself a task every week..be realistic.. books.. friends
+
+
+
+30July2013
+======================================
+Come back almost a month :( 
+
+read seek ad on mobile app dev.. u need those skills fast
+
+- Objective-C, iOS, Java 
+- HTML, CSS, JavaScript, JQuery
+- PHP OO
+- Understanding of Mobile and Web Standards
+- Web Services, API's (REST)
+
+- Expert proficiency in Android development technologies
+- Demonstrated Java and Android SDK experience for developing mobile applications
+- Experience utilising and consuming web services and API¡¦s (REST/RESTful)
+- Bonus points for knowledge of JavaScript, CSS, HTML, Objective-C, or PHP
+- Proven ability to hand code & implement mobile development projects
+- Extremely detail-oriented with strong problem solving and troubleshooting skills
+- Excellent documentation, written, spoken and presentation skills
+- Minimum 2+ years industry experience in a mobile app developer role with published app in the market
+ 
+And bring:
+- Expert knowledge of current mobile and web tech trends, techniques, and adherence to usability best practices
+- Passion for delivering great data-driven mobile solutions
+- Commitment to continuous learning and sharing expertise across the team
+- Desire to influence change and continual improvement
+- Commitment to bringing innovation and inspiration to your work and team
+
+To be successful in this role it is important that you can show a successful history of full SDLC development and a passion for staying at the leading edge of Microsoft technologies. You will be keen to show initiative and take pride in quality software development practices. 
+
+
+Microsoft .net including vb.net, C#, asp.net and T-SQL. 
+
+We have exciting opportunity for a talented developer with PHP and Objective-C skills for developing iOS apps to join our team.
+
+You should have at least 2 to 3 years experience developing for both Mobile and Web.
+
+What you'll be doing:
+
+Working with the team to plan and develop mobile applications and server-side backends
+Attending and actively participate in meetings with clients and prospects
+Writing good, clean code
+Performing code reviews
+Estimating time to develop projects / functionality
+
+Required Skills
+
+Writing iPhone / iPad apps in Objective-C
+Object Oriented PHP with a Framework
+Building and working with REST or JSON-RPC APIs
+Writing complex SQL queries
+A Good understanding of Javascript, not just hacking together jQuery plugins
+GIT version control
+Self-Management
+Excellent written and verbal communication skills
+Ability to work well with others in a cross-functional team environment
+
+Desired Skills
+
+Writing Android Apps in Java
+Experience with Zend Framework
+HTML5 / CSS3
+UNIX Shell experience
+Understanding of the LAMP stack
+Regex
+Experience with Facebook Apps
+Understanding of Agile / Kanban methodologies
+
 
 13Jun2013
 ======================================
